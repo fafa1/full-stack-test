@@ -11,14 +11,13 @@ Criar uma aplicação utilizando as tecnologias que você mais gostar e uma inte
   - Uma das API's entrega [cervejas e não necessita autenticação](https://punkapi.com/)
   - Deve se apresentar os dados numa listagem simples com paginação e, opcionalmente, filtros
   - Os endpoints de consulta de dados devem todos ter autenticação por webtoken ou similar
-- O CRUD não necessita interface, coloque os enpoints disponíveis no README.md
-- Será julgado, além do funcionamento e estrutura do código, o uso de boas práticas, segurança e produtividade de código e a compreensão do teste.
+  - Será julgado, além do funcionamento e estrutura do código, o uso de boas práticas, segurança e produtividade de código e a compreensão do teste.
 
 # Entregas
 Deve ser entregue um repositório contendo o projeto
   
 # Opcional
-Publicação do projeto (pode-se utilizar hospedagens gratuitas como AWS, Heroku, etc)
+Publicação do projeto (pode-se utilizar hospedagens gratuitas como AWS, Heroku, ...)
 
 ## Atenção:
 Se você não conseguir completar todo o teste, fique tranquilo e mostre tudo que você conseguiu fazer
