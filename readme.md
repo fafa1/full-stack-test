@@ -1,24 +1,29 @@
-### Documentação para o teste BACK END
+## cervejaria
 
-Instalar os pacotes necessário para o funcionamento do serviço com o comando: _npm i_ 
+#### Utilizado a api _https://api.punkapi.com/v2/_
 
-logo em seguida executar o passo abaixo.
+Projeto teste cervejaria utilizado o framework __VUEJS__, __Bootstrap vue__ e o __Axios__.
 
-Para rodar o back-end executar o comanto: _npm start_
+Neste projeto foi realizado a construção dos componentes _cadastro_, _login_, _cervejaria_ e 
+o compontente principal de App.vue.
+
+Construído as rotas para os componentes em _router_
+
+A pasta services contém os arquivos _config_ e _cervejasApi_ onde no arquivo _config_ contém 
+a url base da api, para poder fazer as chamadas a api. Em _cervejasApi_ contém os métodos:
+
+para filtrar por nome todas as cervejas, listar as cervejas, realizar o cadastro e login do usuário.
+
+Foi feito a paginação, limitando 16 cervejas por páginas, onde o usuário poderá navevar entre as 
+páginas 1 a 15.
+
+obs: Quando inserido um email ou senha incorreta é retornado um error para o usuário; é mostrado 
+no console o retorno dos dados ao fazer o longin indicando que tudo ocorreu certo.
+
+_instalado as extensões Allow-Control-Allow-Origin_, no chrome para permitir o login e cadastro. 
 
 
-Foi criado um model (Users) contendo o _nome_, _email_, _password_ e os _token_ para armazenar os tokens gerados.
-Foram criadas também funçoes de pre save, para gerar a encriptação da senha, hash.
-Gerartoken para gerar o token de autenticação e findByCredenciais buscando o email e senha do usuario cadastrado.
+##### Problema
 
-
-Foi utilizado o mongodb atlas um serviço do mongo em nuvem, o ambiente foi configurado no arquivo _.env_, cuja a senha vem depois dos dois ponto  __cervejaapi__
-
-No pacote package.json, foi configurado o start do projeto, sendo executado o arquivo env com as configurações do banco, e o nodemon (hotHeload)
-
-
-No arquivo user.js foi configurado as rotas de _cadastro_ e _login_ para realizar o cadastro do usuário e login
-
-a rota _home_, foi testado apenas no postman,
-necessario enviar o token - __Bearer {token} não consegui testar com o front-end.
+Problema encontrado, infelizmente retornou um error ao fazer o _redirect_ após o cadastro ou login, onde seria direcionado para a home(página inicial contendo as cervejas) por isso comentei essa parte do código. Logo coloquei os três links no menu para realizar a navegação.
 
